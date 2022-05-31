@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+p, span, a {
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    margin: 0;
+}
+:root {
+    --primary: #0771b9;
+    --secondary: #5bc5f3;
+}
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+.section_head {
+    padding: 60px 0 40px;
+}
+.section_head h3{
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.divider {
+    display: flex;
+    column-gap: 5px;
+    /* margin: auto; */
+}
+.div1 {
+    width: 47px;
+    height: 3px;
+    background: var(--primary);
+}
+.div2 {
+    width: 3px;
+    height: 3px;
+    background: var(--primary);
+}
+.div3 {
+    width: 2px;
+    height: 3px;
+    background: var(--primary);
+}
+.div4 {
+    width: 1px;
+    height: 3px;
+    background: var(--primary);
+}
+/* Common CSS */
+
+/* Back To Top Start */
+.back_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    display: none;
+}
+/* Back To Top End */
+
+/* Welcome Part Start */
+.welcome_part {
+    background: var(--primary);
+}
+.welcome_icon li a {
+    padding: 0 8px;
+    color: #e7e7e7;
+    transition: all .4s ease;
+}
+.welcome_icon li a:hover {
+    color: #353535;
+}
+/* Welcome Part End */
+
+/* Navbar Start */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+/* Navbar End */
+
+/* Hero Part Start */
+.hero_part {
+    background: url(../img/hero_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero_part .overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 100px 0;
+}
+.hero_con h1 {
+    text-transform: uppercase;
+    font-size: 56px;
+}
+.hero_con h1:nth-child(1) {
+    font-weight: 300;
+}
+.hero_con p {
+    padding: 30px 0;
+}
+.hero_btn a {
+    background: var(--primary);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.hero_btn a:hover {
+    background: transparent;
+    border: 1px solid #fff;
+}
+/* Hero Part End */
+
+/* About Part STart */
+.about_con {
+    font-size: 18px;
+    color: #555;
+}
+.about_con p:nth-child(2){
+    padding-top: 8px;
+}
+/* About Part End */
+
+/* Service Part STart */
+.service_con {
+    background: #f1f1f1;
+    padding:50px 15px 15px;
+    position: relative;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.service_con:hover {
+    box-shadow: 0 0 12px 6px rgba(0,0,0,0.2);
+}
+.service_con:hover .service_icon {
+    background: var(--secondary);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--secondary), 0 0 0 9px #fff;
+}
+.service_con h4 {
+    font-size: 22px;
+    color: #353535;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.service_con p {
+    font-size: 18px;
+    color: #555;
+}
+.service_icon {
+    height: 70px;
+    width: 70px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 5px #fff, 0 0 0 8px #f1f1f1, 0 0 0 11px #fff;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+}
+/* Service Part End */
+
+/* Portfolio Part STart */
+.port_img {
+    position: relative;
+}
+.port_img:hover .port_overlay {
+    opacity: 1;
+}
+.port_overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .4s;
+}
+.port_icon {
+    height: 45px;
+    width: 45px;
+    background: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+/* Portfolio Part End */
+
+/* Team Part Start */
+.team_con_img {
+    position: relative;
+    transition: 0.4s;
+}
+.team_con_img:hover {
+    box-shadow: 0 0 15px -10px black;
+}
+.team_con_img:hover .team_img_overlay {
+    opacity: 1;
+    width: 33.33%;
+}
+.team_img_overlay {
+    height: 100%;
+    width: 0%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .4s;
+}
+.team_img_overlay ul li a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 18px;
+    color: #fff;
+    transition: .3s ease;
+}
+.team_img_overlay ul li a:hover {
+    border: 1px solid var(--secondary);
+    background: var(--secondary);
+
+}
+.team_con_img:hover ~ h4 {
+    color: var(--secondary);
+}
+.team_con h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 8px;
+}
+/* Team Part End */
+
+/* Testimonail Part Start */
+.testi_img {
+    padding: 0 0 45px;
+}
+.testi_con {
+    padding: 15px;
+    background: #f1f1f1;
+    position: relative;
+}
+.testi_con h4 {
+    text-transform: uppercase;
+}
+.testi_con p {
+    font-family: 'Oswald', sans-serif;
+}
+.testi_con .review li {
+    color: var(--secondary);
+}
+.testi_box {
+    height: 40px;
+    width: 40px;
+    background: #f1f1f1;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+/* Testimonail Part End */
+
+/* Contact Part Start */
+.contact_part {
+    padding: 15px 0;
+    background: #353535;
+    margin-top: 60px;
+}
+.contact_con .head {
+    padding-bottom: 20px;
+}
+.inner_con {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.inner_con .icon {
+    height: 40px;
+    width: 40px;
+    background: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.inner_con .con a {
+    color: #fff;
+    display: block;
+}
+.contact_con .links li a {
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+    transition: .4s;
+}
+.contact_con .links li a:hover {
+    color: var(--secondary);
+}
+.contact_con .links {
+    padding-right: 30px;
+}
+/* Contact Part End */
+
+/* Footer Part Start */
+.footer_part {
+    background: #555;
+}
+/* Footer Part End */

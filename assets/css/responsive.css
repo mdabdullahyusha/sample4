@@ -1,0 +1,15 @@
+@media (max-width: 991.98px) {
+    .about_con p:nth-child(2) {
+        display: none;
+    }
+}
+@media (max-width: 767.98px) {
+    .about_con p:nth-child(2) {
+        display: block;
+    }
+}
+@media (max-width: 575.98px) {
+    .about_con p {
+        text-align: justify;
+    }
+}
